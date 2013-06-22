@@ -7,7 +7,7 @@ module Rubimage
     SHORT  = 2
     LONG   = 4
 
-    attr_accessor :width, :height, :dimensions
+    attr_reader :width, :height, :dimensions
     
     def initialize(path)
       @file = File.open path, BINARY

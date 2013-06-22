@@ -1,7 +1,8 @@
  module Rubimage
   
   class JpgReader < ImageReader
-    SOf = ['ff', 'c4']
+    FF  = 'ff'
+    SOf = %w[c0 c1 c2 c3 c5 c6 c7 c9 ca cb cd ce cf]
 
     def initialize(path)
       super(path)
@@ -12,7 +13,7 @@
       def read
         until closed? or end?
           buf = next_byte
-          if buf == SOf[0] and next_byte == SOf[1]
+          if buf == FF and SOf.include? next_byte
             skip_bytes 3
             @height = convert_to_decimal next_short
             @width  = convert_to_decimal next_short
@@ -22,5 +23,4 @@
         end
       end
   end
-  
 end

@@ -18,8 +18,11 @@ module Rubimage
 		when JPG, JPEG
 			type = Rubimage::JpgReader.new path
 		else
-			raise "#{ext_type} is not a currently supported image type"
+			raise "#{ext_type} is not supported currently"
 		end	
 	end
 
 end
+
+test = Rubimage::ImageInfo('../img/front.jpg')
+p test.dimensions
