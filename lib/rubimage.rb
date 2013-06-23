@@ -1,4 +1,3 @@
-require_relative 'rubimage/formatters/hex_formatter'
 require_relative 'rubimage/image_reader'
 require_relative 'rubimage/jpg_reader'
 require_relative 'rubimage/png_reader'
@@ -9,20 +8,16 @@ module Rubimage
   JPG  = '.jpg'
   JPEG = '.jpeg'
 
-	def self.ImageInfo(path)
+	def self.Info(path)
 		ext_type = File.extname path
-
 		case ext_type
 		when PNG
 			type = Rubimage::PngReader.new path
 		when JPG, JPEG
 			type = Rubimage::JpgReader.new path
 		else
-			raise "#{ext_type} is not supported currently"
+			raise "#{ext_type} is not currently supported"
 		end	
 	end
-
 end
 
-test = Rubimage::ImageInfo('../img/front.jpg')
-p test.dimensions

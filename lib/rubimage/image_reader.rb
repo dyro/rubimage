@@ -1,11 +1,12 @@
 module Rubimage
   class ImageReader
-    include HexFormatter
 
-    BINARY = 'rb'
-    BYTE   = 1
-    SHORT  = 2
-    LONG   = 4
+    BINARY     = 'rb'
+    BYTE       = 1
+    TWO_BYTES  = 2
+    FOUR_BYTES = 4
+    SHORT      = 'n'
+    INT        = 'N'
 
     attr_reader :width, :height, :dimensions
     
@@ -23,15 +24,15 @@ module Rubimage
       end
 
       def next_byte
-        format @file.read(BYTE)
+        @file.readbyte
       end
 
       def next_short
-        format @file.read(SHORT)
+        @file.read(TWO_BYTES).unpack(SHORT)[0]
       end
 
-      def next_long
-        format @file.read(LONG)
+      def next_int
+        @file.read(FOUR_BYTES).unpack(INT)[0]
       end
 
       def closed?
