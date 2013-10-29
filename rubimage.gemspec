@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
-  s.name        = 'Rubimage'
-  s.version     = '0.0.2'
+  s.name        = 'rubimage'
+  s.version     = '0.0.3'
   s.date        = '2013-10-29'
   s.summary     = 'Ruby image tools'
-  s.description = 'Rubimage gives you the width and height of an jpg, png and tiff'
+  s.description = 'Rubimage gives you the width and height of a jpg, png and tiff'
   s.authors     = 'Dylan'
   s.files 		  = ['lib/rubimage.rb',
   								 'lib/rubimage/image_reader.rb',
