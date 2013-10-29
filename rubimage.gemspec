@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'Rubimage'
-  s.version     = '0.0.1'
-  s.date        = '2013-06-18'
+  s.version     = '0.0.2'
+  s.date        = '2013-10-29'
   s.summary     = 'Ruby image tools'
   s.description = 'Rubimage gives you the width and height of an jpg, png and tiff'
   s.authors     = 'Dylan'
