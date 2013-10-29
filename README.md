@@ -19,7 +19,7 @@ returns the height of an image
 Rubimage::info(PATH_TO_FILE).dimensions
 ```
 
-returns the width and height of an image as an array
+returns the width and height of an image as a hash
 
 
 
