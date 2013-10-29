@@ -1,4 +1,4 @@
-Gem::Specifications.new do |s|
+Gem::Specification.new do |s|
   s.name        = 'Rubimage'
   s.version     = '0.0.1'
   s.date        = '2013-06-18'

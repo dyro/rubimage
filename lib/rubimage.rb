@@ -4,11 +4,11 @@ require_relative 'rubimage/png_reader'
 
 module Rubimage
 	
-	PNG  = '.png'
+  PNG  = '.png'
   JPG  = '.jpg'
   JPEG = '.jpeg'
 
-	def self.Info(path)
+	def self.info(path)
 		ext_type = File.extname path
 		case ext_type
 		when PNG
@@ -20,4 +20,4 @@ module Rubimage
 		end	
 	end
 end
-
+f
