@@ -16,7 +16,7 @@ module Rubimage
 					skip_bytes 3
 					@height = next_short
 					@width  = next_short
-					@dimensions = [@width, @height]
+					@dimensions = {height: @height, width: @width}
 					close
 				end
 			end
