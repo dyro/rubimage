@@ -20,4 +20,3 @@ module Rubimage
 		end	
 	end
 end
-f
