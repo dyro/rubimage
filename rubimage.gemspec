@@ -6,8 +6,7 @@ Gem::Specifications.new do |s|
   s.description = 'Rubimage gives you the width and height of an jpg, png and tiff'
   s.authors     = 'Dylan'
   s.files 		  = ['lib/rubimage.rb',
-  								 'lib/rubimage/formatters/hex_formatter.rb',
   								 'lib/rubimage/image_reader.rb',
   								 'lib/rubimage/jpg_reader.rb',
-  								 'png_reader.rb'] 
+  								 'lib/rubimage/png_reader.rb'] 
 end
