@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'rubimage'
+  s.name        = 'Rubimage'
   s.version     = '0.0.3'
   s.date        = '2013-10-29'
   s.summary     = 'Ruby image tools'
