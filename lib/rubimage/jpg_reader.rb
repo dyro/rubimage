@@ -23,3 +23,4 @@ module Rubimage
 		end
 	end
 end
+ 
