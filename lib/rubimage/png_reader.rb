@@ -1,5 +1,4 @@
 module Rubimage
-
   class PngReader < ImageReader
     PNG_HEADER = 16
 
@@ -17,5 +16,4 @@ module Rubimage
         close
       end
   end
-  
 end
