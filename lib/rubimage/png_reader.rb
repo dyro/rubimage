@@ -8,12 +8,12 @@ module Rubimage
     end
 
     private 
-      def read
-        skip_bytes PNG_HEADER
-        @width  = next_int
-        @height = next_int
-        @dimensions = {height: @height, width: @width}
-        close
-      end
+    def read
+      skip_bytes PNG_HEADER
+      @width  = next_int
+      @height = next_int
+      @dimensions = {height: @height, width: @width}
+      close
+    end
   end
 end
